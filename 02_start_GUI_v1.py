@@ -36,22 +36,22 @@ class Start:
         # Buttons go here....
         button_font = "Arial 12 bold"
         # Purple low stakes button...
-        self.lowstakes_button = Button(self.stakes_frame, text="Low ($5)",
+        self.low_stakes_button = Button(self.stakes_frame, text="Low ($5)",
                                        command=lambda: self.to_game(1),
                                        font=button_font, bg="Purple")
-        self.lowstakes_button.grid(row=0, column=0, pady=10)
+        self.low_stakes_button.grid(row=0, column=0, pady=10)
 
         # Pink medium stakes button...
-        self.lowstakes_button = Button(self.stakes_frame, text="Medium ($10)",
+        self.medium_stakes_button = Button(self.stakes_frame, text="Medium ($10)",
                                       command=lambda: self.to_game(2),
                                       font=button_font, bg="pink")
-        self.lowstakes_button.grid(row=0, column=1, padx=5, pady=10)
+        self.medium_stakes_button.grid(row=0, column=1, padx=5, pady=10)
 
         # Green high stakes button...
-        self.lowstakes_button = Button(self.stakes_frame, text="High ($15)",
+        self.high_stakes_button = Button(self.stakes_frame, text="High ($15)",
                                        command=lambda: self.to_game(3),
                                        font=button_font, bg="#99FF33")
-        self.lowstakes_button.grid(row=0, column=2, pady=10)
+        self.high_stakes_button.grid(row=0, column=2, pady=10)
 
         # Help button
         self.help_button = Button(self.start_frame, text="How to play",
